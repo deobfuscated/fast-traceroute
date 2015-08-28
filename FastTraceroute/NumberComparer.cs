@@ -13,7 +13,7 @@ namespace FastTraceroute
             ListViewItem lvy = (ListViewItem)b;
             int x = int.Parse(lvx.Text.ToString());
             int y = int.Parse(lvy.Text.ToString());
-            return x > y ? 1 : x < y ? -1 : 0;
+            return x.CompareTo(y);
         }
     }
 }
