@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -11,6 +12,7 @@ namespace FastTraceroute
         public TracerouteForm()
         {
             InitializeComponent();
+            Font = SystemFonts.MessageBoxFont;
             listView1.ListViewItemSorter = new NumberComparer();
         }
 
